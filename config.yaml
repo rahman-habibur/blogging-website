@@ -1,0 +1,109 @@
+baseURL: ""
+languageCode: en-us
+title: Md Habibur Rahman
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home #home #news #publications 
+      name: Home
+      url: /
+      weight: 10
+
+    - identifier: blog #blog
+      name: Blog
+      url: /blog
+      weight: 20
+
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+
+    - identifier: experience
+      name: Experience
+      url: /experience
+      weight: 40
+
+    - identifier: skills-hobby
+      name: Skills
+      url: /skills
+      weight: 50
+    #- identifier: search
+    #  name: Search
+    #  url: /search
+    #  weight: 60
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags
+    #   weight: 70
+    - identifier: notes
+      name: Notes
+      url: ""
+      weight: 80
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "Md Habibur Rahman"
+    subtitle: I completed [**BSc in Computer Science and Engineering**](https://daffodilvarsity.edu.bd/department/cse) at the **Daffodil International University**, Bangladesh 🇧🇩<br> I am broadly interested in **building real-world privacy preserved secure system or database with the help of Cryptography** 🔐 <br>
+    imageUrl: "home/home-main-img.jpg"
+    imageWidth: 220
+    imageHeight: 220
+    
+    buttons:
+       - name: "Current Position - Student"
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:mhrahman771@gmail.com"
+    - name: "linkedin"
+      url: "http://www.linkedin.com/in/mhr70"
+    - name: "github"
+      url: "https://github.com/rahman-habibur/rahman-habibur"
+    - name: "youtube"
+      url: "https://www.youtube.com/@rahmanyt"
+    - name: "cv"
+      url: "https://drive.google.com/file/d/1fip7YZ21scZqrbMKgZZLYsZcsnm3qEdf/view?usp=sharing"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
