@@ -11,7 +11,7 @@ menu:
       weight: 10
 
     - identifier: blog #blog
-      name: Blog
+      name: Blogs
       url: /blog
       weight: 20
 
@@ -21,7 +21,7 @@ menu:
       weight: 30
 
     - identifier: experience
-      name: Experience
+      name: Experiences
       url: /experience
       weight: 40
 

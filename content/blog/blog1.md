@@ -1,12 +1,12 @@
 ---
-title: "Skills 1"
+title: "Oww 1"
 description: "How I passed the AWS Solutions Architect-Associate Certification Exam"
 dateString: May 2022
 draft: false
 tags: ["blog1"]
 weight: 101
 cover:
-    image: "/blog/skills1/home-main-img.jpg"
+    image: "/blog/blog1/1.jpg"
 ---
 
 # Credentials
